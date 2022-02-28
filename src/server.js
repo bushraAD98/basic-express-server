@@ -6,23 +6,23 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const logger = require('./middleware/logger.js');
-const validator = require('./middleware/validator.js');
+const validator = require('./middleware/ validator.js')
 const err500 = require('./error-handlers/500.js');
 const err404 = require('./error-handlers/404.js');
 
 app.use(cors());
 app.use(logger);
-app.use(validator);
+// app.use(validator);
 
 
 
-app.get('/person',(req,res,next)=>{
+app.get('/person',validator,(req,res,next)=>{
    
     res.status(200).json({
-        name : req.theName 
+        name : req.query.name
        
     })
-    next();
+    // next();
 
    })
 
