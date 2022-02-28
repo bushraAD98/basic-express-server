@@ -13,3 +13,6 @@
 
 ## Links :
 
+- PR link : https://github.com/bushraAD98/basic-express-server/pull/2
+- Repo link : https://github.com/bushraAD98/basic-express-server
+- Heroku link : https://basic-express-server-deploy.herokuapp.com/
