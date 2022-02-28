@@ -2,12 +2,12 @@
 
 
 const validator  = (req,res,next) =>{
-req.theName = req.query;
-if(req.theName == req.query ){
-    next();
+let name = req.query.name;
+if(!name){
+    next('please type a name.');
 }
 else{
-    next('please type a name.');
+  next(); 
 }
 
 }

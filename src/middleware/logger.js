@@ -3,7 +3,7 @@
 const logger = (req,res,next)=>{
     req.reqType = req.method ;
     req.thePath = req.path ;
-console.log(req.reqType , req.thePath)  ;
+console.log('looged @',req.reqType , req.thePath)  ;
 next();
 
 }
